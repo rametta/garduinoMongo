@@ -10,8 +10,8 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use((err, req, res, next) => console.log(err))
-app.use('/api/gardens', gardens)
-app.use('/api/pots', pots)
-app.use('/api/readings', readings)
+app.use(gardens)
+app.use(pots)
+app.use(readings)
 
 module.exports = app
