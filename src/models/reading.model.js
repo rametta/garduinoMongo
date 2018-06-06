@@ -14,4 +14,6 @@ const ReadingSchema = new Schema({
   light: Number
 })
 
-module.exports = ReadingSchema
+const Reading = mongoose.model('reading', ReadingSchema)
+
+module.exports = Reading

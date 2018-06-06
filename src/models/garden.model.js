@@ -1,5 +1,10 @@
 const mongoose = require('mongoose')
-const GardenSchema = require('./../schemas/garden.schema')
+const Schema = mongoose.Schema
+
+const GardenSchema = new Schema({
+  name: { type: String, required: [true, 'Name is required'] },
+  description: String
+})
 
 const Garden = mongoose.model('garden', GardenSchema)
 
