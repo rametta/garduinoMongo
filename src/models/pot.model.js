@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const PotSchema = new Schema({
-  name: String,
+  name: { type: String, required: [true, 'Name is required'] },
   description: String,
   gardenId: { type: String, required: [true, 'Garden ID is required'] }
 })
