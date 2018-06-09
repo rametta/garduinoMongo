@@ -1,3 +1,6 @@
+<a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+<a target="_blank" href="http://makeapullrequest.com" title="PRs Welcome"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
+
 # Garduino API
 
 API to track data about plants in your garden. Store data like soil moisture, humidity, light levels and temperature.
@@ -8,9 +11,10 @@ ExpressJS &amp; MongoDB.
 
 ## Deploy
 
-This API is hosted free with `now` and uses a free mongo db with mLab. Now will randomly generate a URL for the API. Have the [now CLI](https://zeit.co/now) installed before running the below command.
+This API is hosted free with `now` and uses a free mongo db with mLab. Now will randomly generate a URL for the API. Have the [now CLI](https://zeit.co/now) and NPM installed before running the below command.
 
-Execute `now -e MONGO_DB=<mongo connection string>`
+- Step 1: `npm install`
+- Step 2: `now -e MONGO_DB=<mongo connection string>`
 
 ## How to use
 
